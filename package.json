@@ -10,6 +10,7 @@
 		"@discord-message-components/vue": "^0.2.1",
 		"@vuepress/plugin-back-to-top": "^1.8.2",
 		"markdown-it-emoji": "^2.0.0",
+		"vue": "^2.6.14",
 		"vuepress": "^1.8.2",
 		"vuepress-plugin-element-tabs": "^0.2.8",
 		"vuepress-theme-succinct": "github:distubejs/vuepress-theme-succinct"
