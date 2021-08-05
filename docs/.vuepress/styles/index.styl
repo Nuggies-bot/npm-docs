@@ -1,0 +1,68 @@
+@require './tab'
+
+.navbar .links .search-box input 
+	cursor: pointer;
+	width: 0;
+	padding-right: 0.2rem;
+	&:focus 
+		cursor: auto;
+		width: 10rem;
+		padding-right: 0.5rem;
+
+.theme-default-content pre,
+.theme-default-content pre[class*="language-"] 
+	padding: 0.50rem 1.5rem;
+
+div[class*="language-"].line-numbers-mode .line-numbers-wrapper 
+	padding: 0.50rem 0;
+	width: 2.5rem;
+
+div[class*="language-"].line-numbers-mode pre 
+	padding-top: 0.10rem;
+	padding-left: 3.5rem;
+	padding-bottom: 0.60rem;
+	margin-top: 7px;
+
+div[class*="language-"].line-numbers-mode::after 
+	width: 2.5rem;
+
+div[class*="language-"].line-numbers-mode .line-numbers-wrapper .line-number:hover
+	color: var(--accentColor);
+
+.go-to-top 
+	color: var(--accentColor);
+	z-index: 1;
+	background: transparent;
+	padding: 12px;
+
+@media screen and (max-width: $MQMobile)
+	.navbar .links 
+		padding-left: 0.25rem;
+
+svg 
+	max-width: 100%
+
+body 
+	scrollbar-width: thin;
+
+html 
+	--scrollbarBG: transparent !important;
+	--thumbBG: var(--accentColor);
+
+body::-webkit-scrollbar 
+	width: 10px;
+
+body 
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+
+body::-webkit-scrollbar-track 
+	background: var(--scrollbarBG);
+
+body::-webkit-scrollbar-thumb 
+	background-color: var(--thumbBG);
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
+
+* 
+	outline: none;
