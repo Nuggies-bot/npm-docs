@@ -4,7 +4,7 @@ heroText: null
 tagline: null
 actionText: null
 actionLink: null
-footer: Made with ❤️ by Sujal Goel
+footer: Made with ❤️ by Nugget Development™
 ---
 
 <div align="center">
