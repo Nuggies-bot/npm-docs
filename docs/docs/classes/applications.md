@@ -50,6 +50,6 @@ Applications help you make your life easier with different types of applications
 
 #### .setup()
 
-| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description** |
-|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:---------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message |
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**        |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------------:|
+| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object |
