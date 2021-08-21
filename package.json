@@ -7,7 +7,6 @@
 		"build": "vuepress build docs"
 	},
 	"dependencies": {
-		"@discord-message-components/vue": "^0.2.1",
 		"@vuepress/plugin-back-to-top": "^1.8.2",
 		"markdown-it-emoji": "^2.0.0",
 		"vue": "^2.6.14",

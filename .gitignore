@@ -1,4 +1,3 @@
-/ngrok.exe
 /node_modules
 docs/.vuepress/dist
 /package-lock.json
