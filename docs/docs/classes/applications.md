@@ -6,6 +6,7 @@ Applications help you make your life easier with different types of applications
 ## Methods
 
 #### .addApplication()
+##### Creates a application for which anyone can make a response.
 
 | **Parameter**     | **Type**                                                                                          | **Default** | **Required** | **Description**          |
 |:-----------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------:|
@@ -23,6 +24,7 @@ Applications help you make your life easier with different types of applications
 <hr>
 
 #### .deleteapplication()
+##### Deletes an application for the guild.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**  |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
@@ -31,6 +33,7 @@ Applications help you make your life easier with different types of applications
 <hr>
 
 #### .create()
+##### Creates/Initializes the application system for the guild.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
@@ -41,6 +44,7 @@ Applications help you make your life easier with different types of applications
 <hr>
 
 #### .getDataByGuild()
+##### Returns the data for the guild.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**  |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
@@ -49,6 +53,7 @@ Applications help you make your life easier with different types of applications
 <hr>
 
 #### .setup()
+##### a pre made template for your bot.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**        |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------------:|
