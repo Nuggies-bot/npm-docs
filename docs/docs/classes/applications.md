@@ -20,6 +20,7 @@ Applications help you make your life easier with different types of applications
 | cooldown          | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |             | True         | Cooldown for re-applying |
 | responseChannelID | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID       |
 
+<hr>
 
 #### .deleteapplication()
 
@@ -27,6 +28,7 @@ Applications help you make your life easier with different types of applications
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
 | guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID |
 
+<hr>
 
 #### .create()
 
@@ -36,6 +38,7 @@ Applications help you make your life easier with different types of applications
 | content       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message / MessageEmbed |
 | client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Client                 |
 
+<hr>
 
 #### .getDataByGuild()
 
@@ -43,6 +46,7 @@ Applications help you make your life easier with different types of applications
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
 | guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID |
 
+<hr>
 
 #### .setup()
 
