@@ -9,7 +9,8 @@ const sidebar = {
 		},
 		{
 			title: 'Classes',
-			children: ['./classes/applications'],
+			children: ['./classes/applications',
+				'./classes/buttonroles',],
 		},
 	],
 };
