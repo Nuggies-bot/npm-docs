@@ -19,3 +19,33 @@ Applications help you make your life easier with different types of applications
 | maxApps           | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |             | True         | Amount of responses      |
 | cooldown          | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |             | True         | Cooldown for re-applying |
 | responseChannelID | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID       |
+
+
+#### .deleteapplication()
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**  |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
+| guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID |
+
+
+#### .create()
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID               |
+| content       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message / MessageEmbed |
+| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Client                 |
+
+
+#### .getDataByGuild()
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**  |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
+| guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID |
+
+
+#### .setup()
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description** |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:---------------:|
+| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message |
