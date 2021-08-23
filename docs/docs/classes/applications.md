@@ -6,7 +6,7 @@ Applications help you make your life easier with different types of applications
 ## Methods
 
 #### .addApplication()
-##### Creates a application for which anyone can make a response.
+##### Creates an application for which anyone can make a response.
 
 | **Parameter**     | **Type**                                                                                          | **Default** | **Required** | **Description**          |
 |:-----------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------:|

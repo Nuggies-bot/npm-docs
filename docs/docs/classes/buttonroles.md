@@ -5,6 +5,7 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 ## Methods
 
 #### .addrole()
+##### adds the button roles.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description** |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:---------------:|
@@ -16,6 +17,7 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 <hr>
 
 #### .create()
+##### creates the button roles.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
@@ -27,6 +29,7 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 <hr>
 
 #### .edit()
+##### edits the button roles.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
@@ -37,6 +40,7 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 <hr>
 
 #### .delete()
+##### deletes the button roles.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**        |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------------:|
