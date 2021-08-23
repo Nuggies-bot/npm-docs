@@ -32,6 +32,14 @@ Applications help you make your life easier with different types of applications
 
 <hr>
 
+#### .getDropdownComponent()
+##### Returns the dropdown menu with each and every application set in the guild.
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**  |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
+| guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID |
+
+
 #### .create()
 ##### Creates/Initializes the application system for the guild.
 
