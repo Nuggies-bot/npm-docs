@@ -21,7 +21,7 @@ module.exports = {
 			{ property: 'og:description', content: 'A utility package for Discord Bots!' },
 		],
 		['meta', { property: 'og:type', content: 'website' }],
-		['meta', { property: 'og:url', content: 'https://discord-buttons.js.org' }],
+		['meta', { property: 'og:url', content: 'https://nuggies.js.org/' }],
 		['meta', { property: 'og:locale', content: 'en' }],
 		[
 			'meta',
@@ -33,7 +33,7 @@ module.exports = {
 	themeConfig: {
 		smoothScroll: true,
 		searchPlaceholder: 'Search',
-		repo: 'Nuggies-bot',
+		repo: 'Nuggies-bot/nuggies-npm',
 		lastUpdated: true,
 		nav: [
 			{
