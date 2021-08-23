@@ -19,19 +19,84 @@ Giveaways are a nice way to get your server hyped up! but with buttons?!! Here's
 
 <hr>
 
-#### .edit()
+#### .startTimer()
+##### starts the giveaway timer.
+
+| **Parameter** | **Type**                                                                                            | **Default** | **Required** | **Description**                |
+|:-------------:|:---------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Discord Message object         |
+| data          | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Mongoose Document              |
+| instant       | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | false       | False        | Instant giveaway start         |
+
+<hr>
+
+#### .gotoGiveaway()
+##### sends the giveaway message link.
+
+| **Parameter** | **Type**                                                                                            | **Default** | **Required** | **Description**                |
+|:-------------:|:---------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| data          | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Mongoose Document              |
+
+<hr>
+
+#### .endByButton()
+##### ends the giveaway with button.
+
+| **Parameter** | **Type**                                                                                            | **Default** | **Required** | **Description**                |
+|:-------------:|:---------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Discord Client                 |
+| messageID     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   |             | True         | Discord message ID             |
+| button        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Discord Button interaction     |
+
+<hr>
+
+#### .end()
 ##### edits the giveaway.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
 | message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
-| content       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message / MessageEmbed |
-| role          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Role ID                |
+| data          | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Mongoose Document              |
+| giveawaymsg   | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
 
+<hr>
 
-#### .delete()
-##### deletes the giveaway.
+#### .reroll()
+##### picks a new winner for the giveaway.
 
-| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**        |
-|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object |
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Client                 |
+| messageID     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord message ID             |
+
+<hr>
+
+#### .getByMessageID()
+##### get the giveaway from mongoose by message id.
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| messageID     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord message ID             |
+
+<hr>
+
+#### .startAgain()
+##### starts the giveaway again.
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Client                 |
+
+<hr>
+
+#### .drop()
+##### creates a drop giveaway.
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
+| channel       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID             |
+| prize         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Giveaway Prize                 |
+| host          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord User ID                |
+
+<hr>
