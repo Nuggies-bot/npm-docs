@@ -1,8 +1,15 @@
 # giveaways
 
-Giveaways are a nice way to get your server hyped up! but with buttons?!! Here's how you can implement it!! [Example Bot](https://github.com/Nuggies-bot/giveaways-example)
+Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's how you can implement it!! [Example Bot](https://github.com/Nuggies-bot/giveaways-example)
 
 ## Methods
+
+#### .Messages()
+##### Setup custom messages in giveaways.
+
+| **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
+|:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
+| client       | [Client](https://discord.js.org/#/docs/main/stable/class/Client)                                      |            | null         | The discord.js Client object   |
 
 #### .create()
 ##### creates a giveaway with buttons.
