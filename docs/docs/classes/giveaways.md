@@ -9,7 +9,9 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| client       | [Client](https://discord.js.org/#/docs/main/stable/class/Client)                                      |            | null         | The discord.js Client object   |
+| client        | [Client](https://discord.js.org/#/docs/main/stable/class/Client)                                  |             | null         | The discord.js Client object   |
+
+<hr>
 
 #### .create()
 ##### creates a giveaway with buttons.
