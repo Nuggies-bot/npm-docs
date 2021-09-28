@@ -54,8 +54,7 @@ Nuggies.connect('MONGO_URI');
 const Nuggies = require('nuggies');
 
 // Create
-Nuggies.giveaways.create({
-	message: message,
+Nuggies.giveaways.create(client, {
 	prize: 'test',
 	host: message.author.id,
 	winners: 1,
@@ -63,12 +62,11 @@ Nuggies.giveaways.create({
 	requirements: {
 		enabled: false,
 	},
-	channel: message.channel.id,
+	channelID: message.channel.id,
 });
 
 // Drop
-Nuggies.giveaways.drop({
-	message: message,
+Nuggies.giveaways.drop(client, {
 	prize: 'test',
 	channel: message.channel.id,
 	host: message.author.id,
@@ -84,7 +82,7 @@ Nuggies.giveaways.startAgain(client);
 await Nuggies.giveaways.reroll(client, messageID);
 
 // startTimer (async/await)
-await Nuggies.giveaways.startTimer(message, data);
+await Nuggies.giveaways.startTimer(client);
 
 // GotoGiveaway (async/await)
 await Nuggies.giveaways.gotoGiveaway(data);
@@ -142,19 +140,7 @@ Nuggies.dropdownroles.create({
 
 ```js
 const Nuggies = require('nuggies');
-
-// Other Libraries
-const Discord = require('discord.js');
-const client = new Discord.Client();
-require('discord-buttons')(client);
-
-client.on('clickButton', (button) => {
-	Nuggies.buttonclick(client, button);
-});
-
-client.on('clickMenu', (menu) => {
-	Nuggies.dropclick(client, menu);
-});
+Nuggies.handleInteractions(client)
 ```
 
 :::
