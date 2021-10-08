@@ -12,6 +12,7 @@ const sidebar = {
 				'./classes/buttonroles',
 				'./classes/dropdownroles',
 				'./classes/giveaways',
+				'./classes/main',
 			],
 		},
 	],

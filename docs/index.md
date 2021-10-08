@@ -37,8 +37,9 @@ yarn add nuggies
 ## Example
 
 :::: tabs
-::: tab connect.js
+::: tab Setup
 
+# Connecting to database
 ```js
 const Nuggies = require('nuggies');
 /*
@@ -47,8 +48,40 @@ MONGO_URI is your MongoDB connection URL.
 Nuggies.connect('MONGO_URI');
 ```
 
+# Handling interactions
+```js
+const Nuggies = require('nuggies');
+
+// Other Libraries
+const Discord = require('discord.js');
+const client = new Discord.Client();
+require('discord-buttons')(client); // If you use v12
+Nuggies.handleInteractions(client);
+```
+
+# Adding custom messages
+```js
+const Nuggies = require('nuggies');
+
+// Client
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+Nuggies.Messages(client, {
+	giveawayOptions: {
+		winMessage: '{winners} you have won ${prize}! GG',
+	},
+	buttonRolesOptions: {
+		addMessage: 'Added {role} as you asked!',
+	},
+	dropdownRolesOptions: {
+		removeMessage: 'Removed {role} because you selected it in the drop-down',
+	},
+});
+```
+
 :::
-::: tab giveaways.js
+::: tab Giveaways
 
 ```js
 const Nuggies = require('nuggies');
@@ -94,7 +127,7 @@ await Nuggies.giveaways.getByMessageID(messageID);
 ```
 
 :::
-::: tab buttonroles.js
+::: tab ButtonRoles
 
 ```js
 const Nuggies = require('nuggies');
@@ -116,7 +149,7 @@ Nuggies.buttonroles.create({
 ```
 
 :::
-::: tab dropdownroles.js
+::: tab DropdownRoles
 
 ```js
 const Nuggies = require('nuggies');
@@ -138,24 +171,9 @@ Nuggies.dropdownroles.create({
 ```
 
 :::
-::: tab interaction.js
+::: tab Interaction.js
 
-```js
-const Nuggies = require('nuggies');
 
-// Other Libraries
-const Discord = require('discord.js');
-const client = new Discord.Client();
-require('discord-buttons')(client);
-
-client.on('clickButton', (button) => {
-	Nuggies.buttonclick(client, button);
-});
-
-client.on('clickMenu', (menu) => {
-	Nuggies.dropclick(client, menu);
-});
-```
 
 :::
 ::::
