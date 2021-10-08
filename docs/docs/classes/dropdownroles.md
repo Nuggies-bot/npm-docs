@@ -1,4 +1,4 @@
-# dropdownroles
+# Dropdownroles
 
 dropdown roles are a newer way to hand out roles in a server, instead of reactions, the bot generates discord's new dropdown menus and hands out the specific roles accordingly! [Example Bot](https://github.com/Nuggies-bot/dropdown-roles-example)
 

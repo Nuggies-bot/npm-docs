@@ -1,4 +1,4 @@
-# giveaways
+# Giveaways
 
 Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's how you can implement it!! [Example Bot](https://github.com/Nuggies-bot/giveaways-example)
 

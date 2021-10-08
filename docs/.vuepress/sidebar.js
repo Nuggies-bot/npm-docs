@@ -8,11 +8,11 @@ const sidebar = {
 		{
 			title: 'Classes',
 			children: [
-				'./classes/applications',
+				'./classes/main',
+				'./classes/giveaways',
 				'./classes/buttonroles',
 				'./classes/dropdownroles',
-				'./classes/giveaways',
-				'./classes/main',
+				'./classes/applications',
 			],
 		},
 	],

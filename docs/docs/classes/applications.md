@@ -1,4 +1,4 @@
-# applications
+# Applications
 
 Applications help you make your life easier with different types of applications you might have to handle! [Example Bot](https://github.com/Nuggies-bot/applications-example)
 
