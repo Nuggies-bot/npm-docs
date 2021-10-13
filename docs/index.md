@@ -39,7 +39,7 @@ yarn add nuggies
 :::: tabs
 ::: tab Setup
 
-# Connecting to database
+## Connecting to database
 ```js
 const Nuggies = require('nuggies');
 /*
@@ -48,7 +48,7 @@ MONGO_URI is your MongoDB connection URL.
 Nuggies.connect('MONGO_URI');
 ```
 
-# Handling interactions
+## Handling interactions
 ```js
 const Nuggies = require('nuggies');
 
@@ -59,7 +59,7 @@ require('discord-buttons')(client); // If you use v12
 Nuggies.handleInteractions(client);
 ```
 
-# Adding custom messages
+## Adding custom messages
 ```js
 const Nuggies = require('nuggies');
 
@@ -127,7 +127,7 @@ await Nuggies.giveaways.getByMessageID(messageID);
 ```
 
 :::
-::: tab ButtonRoles
+::: tab Button Roles
 
 ```js
 const Nuggies = require('nuggies');
@@ -149,7 +149,7 @@ Nuggies.buttonroles.create({
 ```
 
 :::
-::: tab DropdownRoles
+::: tab Dropdown Roles
 
 ```js
 const Nuggies = require('nuggies');
@@ -171,9 +171,6 @@ Nuggies.dropdownroles.create({
 ```
 
 :::
-::: tab Interaction.js
-
-
 
 :::
 ::::
