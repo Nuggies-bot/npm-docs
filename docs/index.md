@@ -39,7 +39,7 @@ yarn add nuggies
 :::: tabs
 ::: tab Setup
 
-### Connecting to database
+#### Connecting to database
 ```js
 const Nuggies = require('nuggies');
 /*
@@ -48,7 +48,7 @@ MONGO_URI is your MongoDB connection URL.
 Nuggies.connect('MONGO_URI');
 ```
 
-### Handling interactions
+#### Handling interactions
 ```js
 const Nuggies = require('nuggies');
 
@@ -59,7 +59,7 @@ require('discord-buttons')(client); // If you use v12
 Nuggies.handleInteractions(client);
 ```
 
-### Adding custom messages
+#### Adding custom messages
 ```js
 const Nuggies = require('nuggies');
 
@@ -87,8 +87,7 @@ Nuggies.Messages(client, {
 const Nuggies = require('nuggies');
 
 // Create
-Nuggies.giveaways.create({
-	message: message,
+Nuggies.giveaways.create(client, {
 	prize: 'test',
 	host: message.author.id,
 	winners: 1,
@@ -96,14 +95,13 @@ Nuggies.giveaways.create({
 	requirements: {
 		enabled: false,
 	},
-	channel: message.channel.id,
+	channelID: message.channel.id,
 });
 
 // Drop
-Nuggies.giveaways.drop({
-	message: message,
+Nuggies.giveaways.drop(client, {
 	prize: 'test',
-	channel: message.channel.id,
+	channelID: message.channel.id,
 	host: message.author.id,
 });
 
@@ -138,8 +136,7 @@ const BUTTON_ROLES = new Nuggies.buttonroles().addrole({
 	role: '781061040514269185',
 });
 
-Nuggies.buttonroles.create({
-	message: message,
+Nuggies.buttonroles.create(client, {
 	role: BUTTON_ROLES,
 	content: new Discord.MessageEmbed()
 		.setTitle('Some Title')
@@ -160,13 +157,13 @@ const DROP_DOWN_ROLES = new Nuggies.buttonroles().addrole({
 	role: '781061040514269185',
 });
 
-Nuggies.dropdownroles.create({
-	message: message,
+Nuggies.dropdownroles.create(client, {
 	role: DROP_DOWN_ROLES,
 	content: new Discord.MessageEmbed()
 		.setTitle('Some Title')
 		.setDescription('Some Description'),
 	channelID: message.channel.id,
+	type: 'single',
 });
 ```
 :::
@@ -231,4 +228,4 @@ client.on('message', (message) => {
 
 ## Report Bugs
 
-### You can submit bug reports in our support server(look above) or create an issue in the [GitHub repository](https://github.com/Nuggies-bot/nuggies-npm/issues/new/choose).
+#### You can submit bug reports in our [support server](https://discord.gg/Z4ebH8PXeA) or create an issue in the [GitHub repository](https://github.com/Nuggies-bot/nuggies-npm/issues/new/choose).

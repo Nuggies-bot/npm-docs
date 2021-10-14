@@ -1,6 +1,6 @@
 # Applications
 
-Applications help you make your life easier with different types of applications you might have to handle! [Example Bot](https://github.com/Nuggies-bot/applications-example)
+Applications help you make your life easier with different types of applications you might have to handle!
 
 
 ## Methods
@@ -67,3 +67,7 @@ Applications help you make your life easier with different types of applications
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**        |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------------:|
 | message       | [Message](https://discord.js.org/#/docs/main/stable/class/Message) |             | True         | Discord Message object |
+
+## Example
+
+#### [Example Bot](https://github.com/Nuggies-bot/applications-example)

@@ -1,6 +1,6 @@
 # Dropdown Roles
 
-dropdown roles are a newer way to hand out roles in a server, instead of reactions, the bot generates discord's new dropdown menus and hands out the specific roles accordingly! [Example Bot](https://github.com/Nuggies-bot/dropdown-roles-example)
+dropdown roles are a newer way to hand out roles in a server, instead of reactions, the bot generates discord's new dropdown menus and hands out the specific roles accordingly!
 
 ## Methods
 
@@ -32,5 +32,10 @@ dropdown roles are a newer way to hand out roles in a server, instead of reactio
 
 #### .roles
 ##### The roles stored in drop-down roles manager
-| **Type** | **Description**                          |:--------:|:-----------------------------------------:|
+
+| **Type** | **Description**                                                    |:--------:|:------------------------------------------------------------------:|
 | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | The array of all the roles to be shown in the button roles message |
+
+## Example
+
+#### [Example Bot](https://github.com/Nuggies-bot/dropdown-roles-example)

@@ -1,6 +1,6 @@
 # Button Roles
 
-Button roles are a newer way to hand out roles in a server, instead of reactions. The bot generates Discord's new buttons and hands out the specific roles accordingly! [Example Bot](https://github.com/Nuggies-bot/buttonroles-example)
+Button roles are a newer way to hand out roles in a server, instead of reactions. The bot generates Discord's new buttons and hands out the specific roles accordingly!
 
 ## Methods
 
@@ -50,5 +50,10 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 
 #### .roles
 ##### The roles stored in button roles manager
-| **Type** | **Description**                          |:--------:|:-----------------------------------------:|
+
+| **Type** | **Description**                                                    |:--------:|:------------------------------------------------------------------:|
 | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | The array of all the roles to be shown in the button roles message |
+
+## Example
+
+#### [Example Bot](https://github.com/Nuggies-bot/buttonroles-example)

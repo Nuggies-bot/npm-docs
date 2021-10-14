@@ -1,6 +1,6 @@
 # Giveaways
 
-Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's how you can implement it!! [Example Bot](https://github.com/Nuggies-bot/giveaways-example)
+Giveaways are a nice way to get your server hyped up! And with 100% more buttons :O
 
 ## Methods
 
@@ -100,3 +100,7 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 | host          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord User ID                |
 
 <hr>
+
+## Example
+
+#### [Example Bot](https://github.com/Nuggies-bot/giveaways-example)
