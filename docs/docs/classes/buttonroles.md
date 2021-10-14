@@ -37,8 +37,6 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 | content       | [MessageEmbed](https://discord.js.org/#/docs/main/stable/class/MessageEmbed)/[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Message content / MessageEmbed |
 | role          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Role ID                |
 
-<hr>
-
 #### .delete()
 ##### deletes the button roles.
 
@@ -51,9 +49,12 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 #### .roles
 ##### The roles stored in button roles manager
 
-| **Type** | **Description**                                                    |:--------:|:------------------------------------------------------------------:|
+| **Type**                                                                                        | **Description**                                                    
+|:-----------------------------------------------------------------------------------------------:|:------------------------------------------------------------------:|
 | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | The array of all the roles to be shown in the button roles message |
 
 ## Example
 
 #### [Example Bot](https://github.com/Nuggies-bot/buttonroles-example)
+
+<hr>
