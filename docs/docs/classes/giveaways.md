@@ -9,13 +9,13 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
+| client       | [Client](https://discord.js.org/#/docs/main/stable/class/Client) |             | True         | Discord Client object        |
 | prize         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Giveaway Prize                 |
 | host          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord User ID                |
 | winners       | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) |             | True         | Giveaway Winners               |
 | endAfter      | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Giveaway Ending Time           |
 | requirements  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Giveaway requirements          |
-| channel       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID             |
+| channelID     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID             |
 
 <hr>
 
@@ -24,8 +24,8 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                            | **Default** | **Required** | **Description**                |
 |:-------------:|:---------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Discord Message object         |
-| data          | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Mongoose Document              |
+| message       | [Message](https://discord.js.org/#/docs/main/stable/class/Message)   |             | True         | Discord Message object         |
+| data          | [Document](https://mongoosejs.com/docs/api/document.html)   |             | True         | Mongoose Document              |
 | instant       | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | false       | False        | Instant giveaway start         |
 
 <hr>
@@ -35,7 +35,7 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                            | **Default** | **Required** | **Description**                |
 |:-------------:|:---------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| data          | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Mongoose Document              |
+| data          | [Document](https://mongoosejs.com/docs/api/document.html)   |             | True         | Mongoose Document              |
 
 <hr>
 
@@ -44,20 +44,20 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                            | **Default** | **Required** | **Description**                |
 |:-------------:|:---------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Discord Client                 |
+| client        | [Client](https://discord.js.org/#/docs/main/stable/class/Client)   |             | True         | Discord Client                 |
 | messageID     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   |             | True         | Discord message ID             |
-| button        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)   |             | True         | Discord Button interaction     |
+| button        | [ButtonInteraction](https://discord.js.org/#/docs/main/stable/class/ButtonInteraction)   |             | True         | Discord Button interaction     |
 
 <hr>
 
 #### .end()
-##### edits the giveaway.
+##### Ends the giveaway.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
-| data          | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Mongoose Document              |
-| giveawaymsg   | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
+| message       | [Message](https://discord.js.org/#/docs/main/stable/class/Message) |             | True         | Discord Message object         |
+| data          | [Document](https://mongoosejs.com/docs/api/document.html) |             | True         | Mongoose Document              |
+| giveawaymsg   | [Message](https://discord.js.org/#/docs/main/stable/class/Message) |             | True         | Discord Message object         |
 
 <hr>
 
@@ -66,7 +66,7 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Client                 |
+| client        | [Client](https://discord.js.org/#/docs/main/stable/class/Client) |             | True         | Discord Client                 |
 | messageID     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord message ID             |
 
 <hr>
@@ -85,7 +85,7 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Client                 |
+| client        | [Client](https://discord.js.org/#/docs/main/stable/class/Client) |             | True         | Discord Client                 |
 
 <hr>
 
@@ -94,8 +94,8 @@ Giveaways are a nice way to get your server hyped up! But with buttons?!! Here's
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
-| channel       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID             |
+| client        | [Client](https://discord.js.org/#/docs/main/stable/class/Client) |             | True         | Discord Client object          |
+| channelID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID             |
 | prize         | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Giveaway Prize                 |
 | host          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord User ID                |
 

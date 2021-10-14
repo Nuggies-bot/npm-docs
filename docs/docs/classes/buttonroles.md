@@ -5,7 +5,7 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 ## Methods
 
 #### .addrole()
-##### adds the button roles.
+##### Adds role to button role manager.
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description** |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:---------------:|
@@ -21,8 +21,8 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
-| content       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message / MessageEmbed |
+| message       | [Message](https://discord.js.org/#/docs/main/stable/class/Message) |             | True         | Discord Message object         |
+| content       | [MessageEmbed](https://discord.js.org/#/docs/main/stable/class/MessageEmbed) / [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Message content / MessageEmbed |
 | role          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Role ID                |
 | channelID     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Channel ID             |
 
@@ -33,8 +33,8 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**                |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object         |
-| content       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message / MessageEmbed |
+| message       | [Message](https://discord.js.org/#/docs/main/stable/class/Message) |             | True         | Discord Message object         |
+| content       | [MessageEmbed](https://discord.js.org/#/docs/main/stable/class/MessageEmbed)/[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Message content / MessageEmbed |
 | role          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Role ID                |
 
 <hr>
@@ -44,4 +44,11 @@ Button roles are a newer way to hand out roles in a server, instead of reactions
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**        |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object |
+| message       | [Message](https://discord.js.org/#/docs/main/stable/class/Message) |             | True         | Discord Message object |
+
+## Properties
+
+#### .roles
+##### The roles stored in button roles manager
+| **Type** | **Description**                          |:--------:|:-----------------------------------------:|
+| [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) | The array of all the roles to be shown in the button roles message |

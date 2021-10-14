@@ -29,6 +29,7 @@ Applications help you make your life easier with different types of applications
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**  |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------:|
 | guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID |
+| name       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Name of application |
 
 <hr>
 
@@ -47,7 +48,7 @@ Applications help you make your life easier with different types of applications
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:------------------------------:|
 | guildID       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) |             | True         | Discord Guild ID               |
 | content       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message / MessageEmbed |
-| client        | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Client                 |
+| client        | [Client](https://discord.js.org/#/docs/main/stable/class/Client) |             | True         | Discord Client                 |
 
 <hr>
 
@@ -61,8 +62,8 @@ Applications help you make your life easier with different types of applications
 <hr>
 
 #### .setup()
-##### a pre made template for your bot.
+##### A pre-made setup template for setting up applications
 
 | **Parameter** | **Type**                                                                                          | **Default** | **Required** | **Description**        |
 |:-------------:|:-------------------------------------------------------------------------------------------------:|:-----------:|:------------:|:----------------------:|
-| message       | [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |             | True         | Discord Message object |
+| message       | [Message](https://discord.js.org/#/docs/main/stable/class/Message) |             | True         | Discord Message object |
